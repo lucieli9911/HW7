@@ -1,0 +1,73 @@
+body{
+  background-color: rgb(217, 255, 179);
+  color: rgb(102, 102, 255)
+}
+img {
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 4px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+}
+
+/* Add a hover effect (blue shadow) */
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+footer{
+  font-size: 10pt;
+  color:black;
+}
+
+#center{
+  text-align: center;
+}
+
+.submit_btn{
+  padding-bottom:6px;
+  padding-top: 6px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.submit_btn:hover{
+    background-color:lightpink;
+    color: black;
+}
+input[type=text]{
+  background-color: lightpink;
+  color: rgb(102, 102, 255);
+}
+
+/**table sort**/
+th[role=columnheader]:not(.no-sort) {
+	cursor: pointer;
+}
+
+th[role=columnheader]:not(.no-sort):after {
+	content: '';
+	float: right;
+	margin-top: 7px;
+	border-width: 0 4px 4px;
+	border-style: solid;
+	border-color: #404040 transparent;
+	visibility: hidden;
+	opacity: 0;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+th[aria-sort=ascending]:not(.no-sort):after {
+	border-bottom: none;
+	border-width: 4px 4px 0;
+}
+
+th[aria-sort]:not(.no-sort):after {
+	visibility: visible;
+	opacity: 0.4;
+}
+
+th[role=columnheader]:not(.no-sort):hover:after {
+	visibility: visible;
+	opacity: 1;
+}
